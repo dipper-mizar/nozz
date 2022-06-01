@@ -73,3 +73,10 @@
 
 ##Cinder Block Disk. example:md126p3
 #BLOCK_DISK=
+
+##--------------------Cyborg Config--------------------##
+##Password for Mysql cyborg user. example:000000
+#CYBORG_DBPASS=
+
+##Password for Keystone cyborg user. example:000000
+#CYBORG_PASS=
