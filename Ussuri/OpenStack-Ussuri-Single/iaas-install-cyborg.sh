@@ -78,6 +78,7 @@ crudini --set /etc/cyborg/cyborg.conf keystone_authtoken auth_url http://$HOST_N
 crudini --set /etc/cyborg/cyborg.conf keystone_authtoken auth_type password
 
 cyborg-dbsync --config-file /etc/cyborg/cyborg.conf upgrade
+<<<<<<< HEAD
 
 echo "
 [Unit]
@@ -131,3 +132,5 @@ WantedBy=multi-user.target
 " > /usr/lib/systemd/system/openstack-cyborg-agent.service
 systemctl restart openstack-cyborg-api openstack-cyborg-conductor openstack-cyborg-agent
 systemctl enable openstack-cyborg-api openstack-cyborg-conductor openstack-cyborg-agent
+=======
+>>>>>>> efa8bb3ae62c4ea54f030e600375f0393542c3b3
