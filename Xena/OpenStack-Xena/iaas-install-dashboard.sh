@@ -18,6 +18,9 @@ sed -i "/^WEBROOT = /cWEBROOT = '/dashboard'  # from openstack_auth" /usr/share/
 sed -i "/WEBROOT = /cWEBROOT = '/dashboard'" /usr/share/openstack-dashboard/openstack_dashboard/test/settings.py
 sed -i "/ExecCGI/aRequire all granted" /usr/share/keystone/wsgi-keystone.conf
 
+# I don't know why the Xena version repo but download 20 version dashboard package,
+# for that reason, two codes are not absolutely the same, so here 20 need to be
+# compatible.
 mkdir /usr/share/openstack-dashboard/openstack_dashboard/wsgi
 cat >> /usr/share/openstack-dashboard/openstack_dashboard/wsgi/django.wsgi << EOF
 # Copyright (c) 2017 OpenStack Foundation.
