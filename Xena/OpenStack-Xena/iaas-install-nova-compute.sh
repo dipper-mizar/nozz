@@ -17,6 +17,7 @@ sed -i "/\[centos-ceph-pacific\]/a$ceph_nautilus_baseurl_entry" /etc/yum.repos.d
 yum -y install openstack-nova-compute
 crudini --set /etc/nova/nova.conf DEFAULT enabled_apis osapi_compute,metadata
 crudini --set /etc/nova/nova.conf DEFAULT compute_driver libvirt.LibvirtDriver
+crudini --set /etc/nova/nova.conf DEFAULT instances_path /var/lib/nova/instances
 # 连接消息队列
 crudini --set /etc/nova/nova.conf DEFAULT transport_url rabbit://openstack:$RABBIT_PASS@$HOST_NAME
 # 配置Keystone认证
