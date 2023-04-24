@@ -38,6 +38,7 @@ crudini --set /etc/nova/nova.conf keystone_authtoken user_domain_name default
 crudini --set /etc/nova/nova.conf keystone_authtoken project_name service
 crudini --set /etc/nova/nova.conf keystone_authtoken username nova
 crudini --set /etc/nova/nova.conf keystone_authtoken password $NOVA_PASS
+crudini --set /etc/nova/nova.conf DEFAULT log_dir /var/log/nova
 # VNC settings
 crudini --set /etc/nova/nova.conf vnc enabled true
 crudini --set /etc/nova/nova.conf vnc server_listen $HOST_IP

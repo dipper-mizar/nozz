@@ -29,6 +29,7 @@ crudini --set /etc/nova/nova.conf DEFAULT transport_url rabbit://openstack:$RABB
 crudini --set /etc/nova/nova.conf DEFAULT my_ip $HOST_IP
 crudini --set /etc/nova/nova.conf DEFAULT use_neutron true
 crudini --set /etc/nova/nova.conf DEFAULT firewall_driver nova.virt.firewall.NoopFirewallDriver
+crudini --set /etc/nova/nova.conf DEFAULT log_dir /var/log/nova
 crudini --set /etc/nova/nova.conf api auth_strategy keystone
 crudini --set /etc/nova/nova.conf keystone_authtoken auth_url http://$HOST_NAME:5000/v3
 crudini --set /etc/nova/nova.conf keystone_authtoken memcached_servers $HOST_NAME:11211
