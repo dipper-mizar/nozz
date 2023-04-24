@@ -34,6 +34,7 @@ crudini --set /etc/nova/nova.conf keystone_authtoken password $NOVA_PASS
 crudini --set /etc/nova/nova.conf DEFAULT my_ip $HOST_IP_NODE
 crudini --set /etc/nova/nova.conf DEFAULT use_neutron true
 crudini --set /etc/nova/nova.conf DEFAULT firewall_driver nova.virt.firewall.NoopFirewallDriver
+crudini --set /etc/nova/nova.conf DEFAULT log_dir /var/log/nova
 # 配置VNC连接
 crudini --set /etc/nova/nova.conf vnc enabled true
 crudini --set /etc/nova/nova.conf vnc vncserver_listen 0.0.0.0
