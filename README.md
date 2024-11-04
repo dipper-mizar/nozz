@@ -9,4 +9,5 @@
 * Single/Double node(s)
 
 4.Xena
-* Double nodes
+* Double/Single node(s)
+* Single node recommended, released by CentOS 8.5 2111, x86_64
