@@ -1,6 +1,11 @@
 #!/bin/bash
 set -ex
 source openrc.sh
+if [[ ! -n "$(echo $FLOATING_IP)" ]];then
+    echo "FLOATING_IP none"
+    exit 1
+fi
+
 source /etc/keystone/admin-openrc.sh
 function correct_repo() {
     sed -i -e "s|mirrorlist=|#mirrorlist=|g" /etc/yum.repos.d/CentOS-*
