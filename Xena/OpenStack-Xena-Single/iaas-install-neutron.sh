@@ -126,4 +126,5 @@ nmcli d reapply $INTERFACE_NAME
 # 落定服务
 systemctl restart openstack-nova-api.service
 systemctl enable neutron-server.service neutron-openvswitch-agent.service neutron-dhcp-agent.service neutron-metadata-agent.service neutron-l3-agent.service
-systemctl start neutron-server.service neutron-openvswitch-agent.service neutron-dhcp-agent.service neutron-metadata-agent.service neutron-l3-agent.service openstack-nova-compute.service
+systemctl start neutron-server.service neutron-openvswitch-agent.service neutron-dhcp-agent.service neutron-metadata-agent.service neutron-l3-agent.service
+systemctl restart openstack-nova-compute.service
