@@ -77,3 +77,10 @@ CYBORG_DBPASS=000000
 
 ##Password for Keystone cyborg user. example:000000
 CYBORG_PASS=000000
+
+##--------------------Barbican Config--------------------##
+##Password for Mysql barbican user. example:000000
+BARBICAN_DBPASS=000000
+
+##Password for Keystone barbican user. example:000000
+BARBICAN_PASS=000000
